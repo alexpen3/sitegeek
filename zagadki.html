@@ -1,0 +1,79 @@
+<meta charset = "utf-8">
+<script>
+    var n = alert("Три струны, играет звонко\n Инструмент тот — «треуголка».\n Поскорее узнавай-ка,\n Что же это?");
+    //var answer = "Балалайка"
+    var userAnswer = prompt("Введите ответ");
+    var ochko = parseInt(0);
+    var zag = parseInt(0);
+    var baly = "Количество баллов: ";
+    var otvet = "Правильный ответ: ";
+    var k = "Поздравляю, вы выиграли!";
+    var d = "Вы проиграли!";
+
+    /*    if( answer == userAnswer){
+            alert("Поздравляю, вы выиграли!"); 
+        } else if(answer != userAnswer){
+            alert("Вы проиграли!");
+            alert("Правильный ответ: " + answer);
+            userAnswer = userAswer.toLowerCase(); делает с больших букв маленькие например, (СОН или Сон = сон). Тогда не надо писать
+            много ответов. 
+            
+        }*/
+        if( userAnswer == "balalajka" || userAnswer == "Balalajka" || userAnswer == "Балалайка" || userAnswer == "балалайка"){
+            alert("Поздравляю, вы выиграли!"); 
+            ochko++;
+            zag ++;
+            alert(baly + ochko)
+        } else{
+            alert("Вы проиграли!");
+            alert("Правильный ответ: Балалайкa");
+        }
+    var p = alert("Солнце печёт, липа цветёт.\n Рожь поспевает, когда это бывает?");
+    var answer1 = prompt("Введите ответ");
+        if( answer1 == "Leto" || answer1 == "leto" || answer1 == "Лето" || answer1 == "лето"){
+            alert("Правильно!");
+            ochko++;
+            zag++;
+            alert(baly + ochko)
+            } else{
+            alert("Вы проиграли!");
+            alert("Правильный ответ: Лето");
+        }
+    var l = alert("Стоит дуб,\n В нем двенадцать гнезд,\n В каждом гнезде По четыре яйца,\n В каждом яйце\n По семи цыпленков.");
+    var answer2 = prompt("Введите ответ");
+        if( answer2 == "god" || answer2 == "God" || answer2 == "Год" || answer2 == "год"){
+            alert(k);
+            ochko++;
+            zag++;
+            alert(baly + ochko);
+        } else {
+            alert(d);
+            alert(otvet + "Год");
+        }
+    var t = alert("Ах, не трогайте меня:\n Обожгу и без огня!");
+    var answer3 = prompt("Введите ответ");
+    if( answer3 == "krapiva" || answer3 == "Krapiva" || answer3 == "Крапива" || answer3 == "крапива");
+    if(answer3 == "kislota" || answer3 == "Kislota" || answer3 == "Кислота" || answer3 == "кислота"){
+            alert(k);
+            ochko++;
+            zag++;
+            alert( baly + ochko);
+    }   else {
+        alert(d);
+        alert(otvet + "Крапива");
+    }
+    
+    var e = alert("Два коня у меня,\n Два коня.\n По воде они возят меня.\n А вода Тверда,\n Словно каменная!");
+    var answer4 = prompt("Введите ответ");
+    if( answer4 == "konki" || answer4 == "Konki" || answer4 == "Коньки" || answer4 == "коньки"){
+            alert(k);
+            ochko++;
+            zag++;
+            alert( baly + ochko);
+    }   else {
+        alert(d);
+        alert(otvet + "Коньки");
+    }
+    alert("Всего баллов: " + ochko);
+    alert("Всего отгадано загадок " + zag + " из 5");
+</script>

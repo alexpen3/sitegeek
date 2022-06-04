@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Личный сайт студента GeekBrains</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a {text-decoration: none;}
+        body {background-image: url(img/fon2.jpg);}
+    </style>
+    <script type="text/javascript">
+
+        var score = 0;
+
+        function checkAnswer(inputId, answers){
+            var userAnswer = document.getElementById(inputId).value;
+            userAnswer = userAnswer.toLowerCase();
+            for(var i = 0; i < answers.length; i++){
+                if(userAnswer == answers[i]){
+                    score++;
+                    break;
+                }
+            }
+        }
+
+        function checkAnswers() {
+
+            checkAnswer("userAnswer1", ["Балалайка", "балалайка"]);
+            checkAnswer("userAnswer2", ["Лето", "лето"]);
+            checkAnswer("userAnswer3", ["Год", "год"]);
+            checkAnswer("userAnswer4", ["Крапива", "крапива"]);
+
+            alert("Вы отгадали " + score + " загадок");
+
+        }
+
+    </script>
+   
+</head>
+<body>
+            <div class="page">
+    
+                <div class="header">
+                    <a href="index.html">Главная</a>
+                    <a href="mywork.html">Мои работы</a>
+                    <a href="#">Контакт</a>
+                </div>
+            <div class="contentWrap">
+                 <div class="content">
+                    <div class="center">
+                
+                <h1>Загадки</h1>
+
+                <div class="box">
+
+                    <p class="txtsize">Три струны, играет звонко <br> Инструмент тот — «треуголка».<br> Поскорее узнавай-ка,<br> Что же это?</p>
+                    <input placeholder="Ответ" class="box__txt" type="text" id="userAnswer1">
+ 
+                    <p class="txtsize">Солнце печёт,<br> липа цветёт.<br> Рожь поспевает,<br> когда это бывает?</p>
+                    <input placeholder="Ответ" class="box__txt" type="text" id="userAnswer2">
+
+                    <p class="txtsize">Стоит дуб,<br> В нем двенадцать гнезд,<br> В каждом гнезде<br> По четыре яйца,<br> В каждом яйце<br> По семи цыпленков.</p>
+                    <input placeholder="Ответ" class="box__txt" type="text" id="userAnswer3">
+
+                    <p class="txtsize">Ах, не трогайте меня. Обожгу и без огня!</p>
+                    <input class="box__txt__last" placeholder="Ответ" type="text" id="userAnswer4">
+
+                    <br>
+                    
+                    <f href="#" onClick="checkAnswers();" class="bordertxt">Ответить</f>
+                </div>
+                
+            </div>
+        </div>
+</div>
+
+	
+
+</div>
+<div class="footer">
+                    Copyright &copy; ALex.Pen
+        </div>
+    </body>
+</html>
